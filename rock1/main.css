@@ -1,0 +1,369 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+body {
+  background: radial-gradient(
+    134.34% 134.34% at 50% 0%,
+    #1f3757 0%,
+    #131537 100%
+  );
+  background-repeat: no-repeat;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.head {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.head__div {
+  padding: 10px 40px;
+  max-width: 150px;
+  text-align: center;
+  background: linear-gradient(0deg, #f3f3f3 0%, #ffffff 100%);
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+  border-radius: 8px;
+}
+
+.head__div__paragraph {
+  font-family: "Barlow Semi Condensed";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.5px;
+  color: #2a45c2;
+}
+
+.head__div__score {
+  font-family: "Barlow Semi Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  text-align: center;
+  color: #565468;
+}
+
+.main {
+  margin: 0 auto;
+  margin-top: 100px;
+  max-width: 600px;
+}
+
+.what-picked {
+  margin-left: -20px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.user-picked {
+  margin-bottom: 15px;
+  font-family: "Barlow Semi Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  color: #ffffff;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+}
+
+.pc-picked {
+  margin-left: 30px;
+  font-family: "Barlow Semi Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  color: #ffffff;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+}
+
+.main-triangle {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url("./images/bg-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main__div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.pc-paper {
+  display: none;
+}
+
+.pc-scissors {
+  display: none;
+}
+
+.pc-rock {
+  display: none;
+}
+
+.top-scissor {
+  margin-top: -200px;
+}
+
+.pc-select {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.result {
+  margin: 0 auto;
+  max-width: 220px;
+  display: flex;
+  flex-direction: column;
+}
+
+.result-release {
+  font-family: "Barlow Semi Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 67px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+}
+
+.result-btn {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-family: "Barlow Semi Condensed";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.5px;
+  color: #3b4262;
+  background: linear-gradient(0deg, #f3f3f3 0%, #ffffff 100%);
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+  border-radius: 8px;
+  border: none;
+}
+
+.result-btn-none {
+  display: none;
+}
+
+.result-btn:hover {
+  color: red;
+}
+
+.rules-div {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: 50px;
+  margin-bottom: 10px;
+}
+
+.rules {
+  padding: 10px 30px;
+  font-family: "Barlow Semi Condensed";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 2.5px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+}
+
+.rule-none {
+  display: none;
+}
+
+.rule-page {
+  z-index: 99000;
+  margin-top: -400px;
+  margin-left: 100px;
+  /* width: 400px; */
+  background: #ffffff;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+  border-radius: 8px;
+}
+
+.rule-page-head {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.rule-page-heading {
+  font-family: "Barlow Semi Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: #3b4262;
+}
+
+.x-icon {
+  margin-top: 8px;
+  padding-top: -50px;
+}
+
+.img-rules {
+  padding-top: 32px;
+  padding-bottom: 30px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+@media only screen and (max-width: 530px) {
+  .main-triangle {
+    left: auto;
+  }
+
+  .pc-select {
+    margin-left: auto;
+    margin-right: 20px;
+    width: 160px;
+    height: 160px;
+  }
+
+  .paper {
+    margin-left: -20px;
+  }
+  .user-picked {
+    margin-left: auto;
+    margin-right: 30px;
+    font-size: 15px;
+    letter-spacing: 1.875px;
+  }
+
+  .pc-picked {
+    margin-left: auto;
+    margin-right: 30px;
+    font-size: 15px;
+    letter-spacing: 1.875px;
+  }
+
+  .rules-div {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 0px;
+  }
+
+  .rule-page {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .hover-img {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .paper {
+    margin-left: -20px;
+  }
+
+  .scissors {
+    margin-left: 20px;
+  }
+
+  .img-rules {
+    padding: 0;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .head {
+    padding: 0;
+  }
+
+  .head__logo {
+    width: 120px;
+  }
+  .hover-img {
+    width: 140px;
+    height: 140px;
+  }
+  .paper {
+    margin-top: -20px;
+  }
+  .scissors {
+    margin-top: -20px;
+    margin-left: 40px;
+  }
+
+  .main-triangle {
+    margin-left: auto;
+    margin-right: -20px;
+  }
+
+  .rule-page {
+    margin-top: -250px;
+  }
+
+  .img-rules {
+    padding: 0;
+    padding-left: 5px;
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .user-picked {
+    margin-left: auto;
+    margin-right: 5px;
+    font-size: 15px;
+    letter-spacing: 1.875px;
+  }
+
+  .pc-picked {
+    margin-left: auto;
+    margin-right: 0px;
+    font-size: 15px;
+    letter-spacing: 1.875px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .user-picked {
+    font-size: 12px;
+  }
+
+  .pc-picked {
+    font-size: 12px;
+  }
+
+  .rule-page {
+    margin-left: -10px;
+    margin-right: 0px;
+  }
+}

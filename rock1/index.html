@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500;600;700;800;900&family=Barlow:wght@300;400;500;700&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,700;9..144,900&family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <!--Container-->
+    <section class="container">
+      <!--heeeeeeeeeeeeeeeeeeeeeeeaaaaaaaaaaaaaaaaaad-->
+      <section class="head">
+        <img src="./images/logo.svg" alt="" class="head__logo" />
+        <div class="head__div">
+          <p class="head__div__paragraph">score</p>
+          <p class="head__div__score">0</p>
+        </div>
+      </section>
+
+      <!--Mmmmmmmmmmmmmaaaaaaaaaaaaaaiiiiiiiiiiiiinnnnnnnnnnnnn-->
+
+      <section class="main main-triangle">
+        <div class="what-picked">
+          <p class="user-picked"></p>
+          <p class="pc-picked"></p>
+        </div>
+
+        <div class="main__div">
+          <img src="./images/paper.png" alt="" class="paper hover-img" />
+        </div>
+        <div class="main__div">
+          <img src="./images/Scissors.png" alt="" class="scissors hover-img" />
+        </div>
+        <div class="main__div">
+          <img src="./images/Rock.png" alt="" class="rock hover-img" />
+        </div>
+
+        <div class="rule-none rule-1">
+          <div class="rule-page">
+            <div class="rule-page-head">
+              <h2 class="rule-page-heading">Rule</h2>
+              <img
+                src="./images/icon-close.svg"
+                alt=""
+                width="20"
+                height="20"
+                class="x-icon"
+              />
+            </div>
+            <img src="./images/image-rules.svg" alt="" class="img-rules" />
+          </div>
+        </div>
+      </section>
+
+      <section class="result">
+        <p class="result-release"></p>
+        <button class="result-btn result-btn-none">Play again</button>
+      </section>
+    </section>
+
+    <div class="rules-div">
+      <button class="rules">Rules</button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
